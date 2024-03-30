@@ -4,10 +4,19 @@
 1. Mohammad Faridz Fathin 2202680
 2. Rifanny Lysara Annastasya 2200163
 
-## Deskripsi
-Tuliskan deskripsi singkat tentang proyek atau tugas yang sedang dikerjakan.
 
 ## Dokumentasi 
-![image](https://github.com/fridzfth/QuizUIFlutter17/assets/140497713/2cb41fda-8d50-4df4-bdb0-129a8d5ec090)
+- Jawaban No 1
+
+
+![image](https://github.com/fridzfth/QuizUIFlutter17/assets/140497713/98a31104-e3ee-45ed-878e-f0e80dabf415)
+
+
+
+- Jawaban No 2
+
+
+![image](https://github.com/fridzfth/QuizUIFlutter17/assets/140497713/0bf3e378-809f-4bb2-b480-1f4b7bfb1a80)
+
 
 
