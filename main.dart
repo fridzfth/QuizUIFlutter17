@@ -110,7 +110,7 @@ class ProfileScreen extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.3,
+              height: MediaQuery.of(context).size.height * 0.35,
               decoration: BoxDecoration(
                 color: Color(0xFFF6CD46),
                 borderRadius: BorderRadius.vertical(
@@ -137,10 +137,14 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 20),
-                    CircleAvatar(
-                      radius: 40,
-                      backgroundImage: NetworkImage(
-                        'https://upload.wikimedia.org/wikipedia/commons/0/0f/IU_posing_for_Marie_Claire_Korea_March_2022_issue_03.jpg',
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          right: 20), // Ubah nilai sesuai kebutuhan Anda
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundImage: NetworkImage(
+                          'https://upload.wikimedia.org/wikipedia/commons/0/0f/IU_posing_for_Marie_Claire_Korea_March_2022_issue_03.jpg',
+                        ),
                       ),
                     ),
                   ],
@@ -202,7 +206,7 @@ class _ProfileFormState extends State<ProfileForm> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            'Ubah Profil',
+            'Ubah Profile',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -247,10 +251,10 @@ class _ProfileFormState extends State<ProfileForm> {
                       padding: EdgeInsets.fromLTRB(6, 0, 6, 0),
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.black,
+                          color: Colors.black54,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(5.0),
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                       child: DropdownButtonFormField(
                         value: _selectedGender,
@@ -263,6 +267,7 @@ class _ProfileFormState extends State<ProfileForm> {
                           return DropdownMenuItem<String>(
                             value: value,
                             child: Container(
+                              padding: EdgeInsets.only(left: 10),
                               constraints: BoxConstraints(
                                   maxWidth:
                                       MediaQuery.of(context).size.width / 2),
@@ -271,6 +276,7 @@ class _ProfileFormState extends State<ProfileForm> {
                                 overflow: TextOverflow.visible,
                                 style: TextStyle(
                                   fontSize: 13,
+
                                   color: _selectedGender != null &&
                                           _selectedGender == value
                                       ? Colors
